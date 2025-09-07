@@ -1,20 +1,77 @@
-html,body{
-    margin: 0;
-    padding: 0;
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+        background: linear-gradient(100deg, #a29bfeab, #ff9ff3, #feca57);
+        line-height: 1.65;
+        padding-bottom: 1000px;
+    }
+
+    .container-satu {
+        width: 1000px;
+        margin: 50px auto;
+        background-color:transparent;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        border-radius: 12px;
+    }
+    
+    .kolom-utama{
+        flex: 4;
+        padding: 10px;
+        margin: 10px;
+        order: 2;
+        justify-items: center;
+        background: linear-gradient(65deg, #ff9ec4, #ffc3e3);
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .sidebar-satu{
+        flex: 1;
+        padding: 20px;
+        order: 1;
+        background: linear-gradient(135deg, #08cbf3, #6c5ce7); 
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        color: white;
+    
+    }
+
+    .sidebar-dua{
+        flex: 1;
+        padding: 20px;
+        order: 3;
+        background: linear-gradient(135deg, #ff4d78, #8e44ad); 
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        color: white;
+    }
+
+    .kolom-utama img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 15px rgba(255, 100, 180, 0.6));
 }
 
-body{
-    font-family: Arial, Arial, Helvetica, sans-serif;
-    background-color: #ddd;
-    line-height: 1.65;
-    padding-bottom: 1000px;
-}
-
-.container-satu{
-    width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-sizing:border-box;
-    display: flex;
-}
+    .kolom-utama h2{
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .sidebar-satu h3{
+        text-align: center;
+        margin-top: 0;
+    }
+    .sidebar-dua h3{
+        text-align: center;
+        margin-top: 0;
+    }
