@@ -1,15 +1,11 @@
 <html>
     <head>
-        <title>Dialog Confirm</title>
+        <title>Dialog Promp</title>
     </head>
     <body>
         <script>
-            var yakin = confirm("Apakah kamu yakin akan mengunjugi Polinema?")
-            if (yakin) {
-                window.location = "https://www.polinema.ac.id";
-            } else {
-                document.write("Baikalh tetap disini saja ya :)");
-            }
+            var nama = prompt("Siapa nama kamu?" , "");
+            document.write("<p>Hello " + nama + "</p>")
         </script>
     </body>
 </html>
