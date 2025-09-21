@@ -53,5 +53,23 @@ foreach($nilaiSiswa as $nilai) {
     echo "Nilai: $nilai (lulus) <br>";
 }
 
+$nilai = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+sort($nilai);
+$sisaNilai = [];
+for ($i = 2; $i < count($nilai) - 2; $i++) {
+    $sisaNilai[] = $nilai[$i];
+}
+$total = 0;
+for($i = 0; $i < count($sisaNilai); $i++) {
+    $total += $sisaNilai[$i];
+}
+$rataNilai = $total / count($sisaNilai);
+echo "Daftar nilai: ";
+foreach ($sisaNilai as $n) {
+    echo $n . " ";
+}
 
+ echo"<br>";
+echo "Total nilai: {$total}<br>";
+echo "Rata-rata: {$rataNilai}<br>";
 ?>
