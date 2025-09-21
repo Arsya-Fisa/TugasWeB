@@ -19,6 +19,8 @@ echo "Hasil Bagi: {$HasilBagi} <br>";
 echo "Hasil Sisa Bagi: {$sisaBagi} <br>";
 echo "Hasil Pangkat: {$pangkat} <br>";
 
+$a = 10;
+$b = 5;
 $hasilSama = $a == $b;
 $hasilTidakSama = $a != $b;
 $hasilLebihKecil = $a <$b;
@@ -33,4 +35,36 @@ echo "Hasil Lebih Kecil: {$hasilLebihKecil} <br>";
 echo "Hasil Lebih Besar: {$hasilLebihBesar} <br>";
 echo "Hasil Lebih Kecil sama: {$hasilLebihKecilSama} <br>";
 echo "Hasil Lebih Besar sama: {$hasilLebihBesarSama} <br>";
+
+$a = 10;
+$b = 5;
+$hasilAnd = $a && $b;
+$hasilOr  = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "<br>";
+echo "Hasil And: {$hasilAnd} <br>";
+echo "Hasil Or: {$hasilOr} <br>";
+echo "Hasil NotA: {$hasilNotA} <br>";
+echo "Hasil NotB: {$hasilNotB} <br>";
+
+$a = 10;
+$b = 5;
+$a += $b;
+echo "<br>";
+echo "a += b → {$a}<br>";
+$a -= $b;
+echo "a -= b → {$a}<br>";
+$a *= $b;
+echo "a *= b → {$a}<br>";
+$a /= $b;
+echo "a /= b → {$a}<br>";
+$a %= $b;
+echo "a %= b → {$a}<br>";
+
+
+
+
+
 ?>
