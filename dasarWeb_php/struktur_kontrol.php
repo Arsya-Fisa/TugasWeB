@@ -72,4 +72,28 @@ foreach ($sisaNilai as $n) {
  echo"<br>";
 echo "Total nilai: {$total}<br>";
 echo "Rata-rata: {$rataNilai}<br>";
+
+echo"<br>";
+$harga = 120000;
+$diskon = 0;
+
+if ($harga > 100000) {
+    $diskon =0.20 * $harga;
+}
+$total = $harga - $diskon;
+echo "Harga awal: Rp $harga <br>";
+echo "Diskon: Rp $diskon <br>";
+echo "Harga yang harus dibayar: Rp $total";
+
+echo"<br>";
+echo"<br>";
+$poin = 620; 
+echo "Total skor pemain adalah: $poin <br>";
+
+if ($poin > 500) {
+    $hadiah = "YA";
+} else {
+    $hadiah = "TIDAK";
+}
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiah";
 ?>
