@@ -76,4 +76,5 @@ foreach ($dataNilai[$matapelajaran] as $nilai) {
         echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
     }
 }
+
 ?>
