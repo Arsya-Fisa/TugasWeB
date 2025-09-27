@@ -1,4 +1,8 @@
 <?php
-$pesan = "Saya Arek malang";
-echo strrev($pesan)."<br>";
+$pesan = "Saya Arek Malang";
+$pesanPerkata = explode(" ", $pesan);
+$pesanPerkata = array_map(fn($pesan) => strrev($pesan), $pesanPerkata);
+$pesan = implode(" ", $pesanPerkata);
+
+echo $pesan . "<br>";
 ?>
