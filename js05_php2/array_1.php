@@ -7,7 +7,12 @@
             $listDosen=["Elok Nur Hamdana","Unggul pamenang","Bagas Nugraha"];
             echo $listDosen[2]. "<br>";
             echo $listDosen[0]. "<br>";
-            echo $listDosen[1]. "<br>";
+            echo $listDosen[1]. "<br><br>";
+
+            
+            foreach($listDosen as $dosen){
+                echo $dosen . "<br>";
+            }
         ?>
     </body>
 </html>
