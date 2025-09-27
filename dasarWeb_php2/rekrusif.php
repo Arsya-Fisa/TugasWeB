@@ -1,5 +1,10 @@
 <?php
-    for ($i=1; $i <= 25; $i++) { 
-        echo "perulangan ke-{$i}<br/>";
+    function tampilkanAngka(int $jumlah, int $indexs = 1) {
+        echo "perulangan ke-{$indexs}<br/>";
+
+        if($indexs < $jumlah) {
+            tampilkanAngka($jumlah, $indexs + 1);
+        }
     }
+        tampilkanAngka(20);
 ?>
