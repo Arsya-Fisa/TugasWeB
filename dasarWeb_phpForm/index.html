@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Form Cari - Tes XSS</title>
+</head>
+<body>
+  <h2>Form Pencarian (Tes XSS)</h2>
+
+  <!-- Ganti action jadi search.php untuk versi rentan,
+       atau safe_search.php untuk versi aman -->
+  <form action="search.php" method="post">
+    <input type="text" name="keyword" placeholder="Masukkan kata kunci">
+    <input type="submit" value="Search">
+  </form>
+
+  <p>Contoh input berbahaya: <code>&lt;script&gt;alert('You have been hacked!');&lt;/script&gt;</code></p>
+</body>
+</html>
